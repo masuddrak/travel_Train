@@ -23,16 +23,33 @@ for (let btn of allBtn) {
 
         addedSelectContainer.appendChild(div)
         // total cost
-        total("total_cost", travePrice)
+        totalCost("total_cost", travePrice)
         //grand total cost
-        total("grand_total_cost", travePrice)
+        grandTotal("grand_total_cost", travePrice)
     })
 }
-function total(id, valu) {
+// total cost 
+function totalCost(id, valu) {
     const totalCostText = document.getElementById(id).innerText
     const totalcost = parseInt(totalCostText) + valu
     setInnerText(id, totalcost)
-    setInnerText(id, totalcost)
+}
+// grand total
+function grandTotal(catagory) {
+    const totalCostText = document.getElementById("total_cost").innerText
+    let totalcost = parseInt(totalCostText)
+    if (catagory === "bus") {
+        setInnerText("grand_total_cost", totalcost + 100)
+    }
+    else if (catagory === "train") {
+        setInnerText("grand_total_cost", totalcost - 200)
+    }
+    else if (catagory === "flight") {
+        setInnerText("grand_total_cost", totalcost + 500)
+    }
+    else {
+        setInnerText("grand_total_cost", totalcost)
+    }
 }
 // inner text update
 function setInnerText(id, value) {
