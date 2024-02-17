@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Travel</title>
+    <!-- daisyui  and tailwin css-->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class=" w-10/12 mx-auto text-center p-8 bg-gray-400">
+        <h1 class="text-5xl font-bold">Travel Total Mony $ <span>999</span></h1>
+    </header>
+
+    <main class=" w-10/12 mx-auto text-center p-8 ">
+            <section class="flex justify-between">
+                <!-- alll card -->
+                <section class="grid grid-cols-3 gap-5">
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                        <div class="card-body">
+                          <h2 class="card-title">Shoes!</h2>
+                          <p>If a dog chews shoes whose shoes does he choose?</p>
+                          <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                        <div class="card-body">
+                          <h2 class="card-title">Shoes!</h2>
+                          <p>If a dog chews shoes whose shoes does he choose?</p>
+                          <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                        <div class="card-body">
+                          <h2 class="card-title">Shoes!</h2>
+                          <p>If a dog chews shoes whose shoes does he choose?</p>
+                          <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                          </div>
+                        </div>
+                      </div>
+                </section>
+                <!-- total travel const calculation -->
+                <section>
+                    <div>
+                        <h4 class="text-2xl font-bold"> Const Calcculation</h4>
+                        <hr class="border-2"></hr>
+
+                    </div>
+                    <div>
+                        <h4 class="text-2xl">Total const :$<span>0</span></h4>
+                    </div>
+                    <div class="mt-5">
+                        <button class="btn">Bus+100</button>
+                        <button class="btn">Train-200</button>
+                        <button class="btn">Flight +500</button>
+                    </div>
+                    <div class="mt-4">
+                        <hr class="border-2"></hr>
+                        <h3>Grand Total :$ <span>0</span></h3>
+                    </div>
+                </section>
+            </section>
+    </main>
+
+
+    <script src="./js/travel.js"></script>
+</body>
+
+</html>
