@@ -23,16 +23,17 @@ for (let btn of allBtn) {
 
         addedSelectContainer.appendChild(div)
         // total cost
-        const totalCostText = document.getElementById("total_cost").innerText
-        const totalcost=parseInt(totalCostText)+travePrice
-        document.getElementById("total_cost").innerText=totalcost
+        total("total_cost", travePrice)
         //grand total cost
-        const grandTotalCostText = document.getElementById("grand_total_cost").innerText
-        const grandTotal=parseInt(grandTotalCostText)+travePrice
-        document.getElementById("grand_total_cost").innerText=grandTotal
+        total("grand_total_cost", travePrice)
     })
 }
-
+function total(id, valu) {
+    const totalCostText = document.getElementById(id).innerText
+    const totalcost = parseInt(totalCostText) + valu
+    setInnerText(id, totalcost)
+    setInnerText(id, totalcost)
+}
 // inner text update
 function setInnerText(id, value) {
     document.getElementById(id).innerText = value
